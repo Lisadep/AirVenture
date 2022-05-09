@@ -8,6 +8,12 @@ use Symfony\Component\Routing\Annotation\Route;
 
 class HomeController extends AbstractController
 {
+    #[Route('/')]
+    public function airVenture()
+    {
+        return $this->redirectToRoute('app_home');
+    }
+
     #[Route('/home', name: 'app_home')]
     public function index(): Response
     {
