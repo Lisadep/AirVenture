@@ -3,8 +3,25 @@
     src: url('../fonts/Karla-SemiBold.ttf');
 }
 
-.mynav {
+footer {
     background: #ecf39e;
+}
+
+.slider {
+    position: relative;
+    z-index: 1;
+}
+
+.bg {
+    position: absolute;
+    z-index: 2;
+}
+
+.mynav {
+    position: absolute;
+    z-index: 2;
+    top: 30px;
+    background: rgba(255, 255, 255, 0.5);
     width: 100%;
 }
 
